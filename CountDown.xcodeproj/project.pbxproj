@@ -17,6 +17,7 @@
 		03245CF12A1F932300A74C37 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03245CED2A1F932300A74C37 /* AddItemView.swift */; };
 		03245CF62A1F988E00A74C37 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03245CF52A1F988E00A74C37 /* ItemModel.swift */; };
 		03245CF82A1FA00B00A74C37 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03245CF72A1FA00B00A74C37 /* NewItemView.swift */; };
+		03245CFA2A2003B000A74C37 /* CalendarExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03245CF92A2003B000A74C37 /* CalendarExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		03245CED2A1F932300A74C37 /* AddItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		03245CF52A1F988E00A74C37 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		03245CF72A1FA00B00A74C37 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		03245CF92A2003B000A74C37 /* CalendarExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				03245CF52A1F988E00A74C37 /* ItemModel.swift */,
+				03245CF92A2003B000A74C37 /* CalendarExt.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				03245CF82A1FA00B00A74C37 /* NewItemView.swift in Sources */,
 				03245CDF2A1F92A800A74C37 /* ContentView.swift in Sources */,
 				03245CF12A1F932300A74C37 /* AddItemView.swift in Sources */,
+				03245CFA2A2003B000A74C37 /* CalendarExt.swift in Sources */,
 				03245CEE2A1F932300A74C37 /* DetailView.swift in Sources */,
 				03245CF02A1F932300A74C37 /* ListView.swift in Sources */,
 				03245CDD2A1F92A800A74C37 /* CountDownApp.swift in Sources */,
