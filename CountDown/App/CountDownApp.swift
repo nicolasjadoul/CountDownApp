@@ -11,7 +11,8 @@ import SwiftUI
 struct CountDownApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
+                .environmentObject(itemList())
         }
     }
 }
