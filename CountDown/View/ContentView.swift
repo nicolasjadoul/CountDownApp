@@ -7,32 +7,23 @@
 
 import Foundation
 import SwiftUI
+//import EmojiPicker
 
-let fmt = ISO8601DateFormatter()
 
-let date1 = fmt.date(from: "2017-08-06T19:20:42+0000")!
-let date2 = fmt.date(from: "2020-08-06T19:20:46+0000")!
-let delta = date1.timeIntervalSince(date2)
 
-let diffs = Calendar.current.dateComponents([.year, .month, .day], from: date1, to: date2)
-struct ContentView: View {
-    @State private var date = Date.now
+struct FormattingControls: View {
+    @State private var bgColor =
+        Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
 
-//    print(diffs)
-    
     var body: some View {
         VStack {
-            Text("Enter your birthday")
-            Divider()
-            DatePicker("Enter your birthday", selection: $date)
-                .datePickerStyle(GraphicalDatePickerStyle())
-                .frame(maxHeight: 400)
+            ColorPicker("Alignment Guides", selection: $bgColor)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FormattingControls()
     }
 }
