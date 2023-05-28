@@ -27,5 +27,6 @@ struct Item: Identifiable, Hashable {
     var date: Date
     var delta: Int
     var emoji: String = ""
+    var color: Color = Color.blue
 //  @Published var selectedProduct: Product? //= nil
 }

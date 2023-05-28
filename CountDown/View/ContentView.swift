@@ -11,19 +11,20 @@ import SwiftUI
 
 
 
-struct FormattingControls: View {
-    @State private var bgColor =
-        Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
+struct ContentView: View {
+    @State private var bgColor = Color.red
 
     var body: some View {
         VStack {
-            ColorPicker("Alignment Guides", selection: $bgColor)
+            ColorPicker("Set the background color", selection: $bgColor)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(bgColor)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FormattingControls()
+        ContentView()
     }
 }

@@ -16,6 +16,7 @@ struct NewItemView: View {
     @State private var dateFrom = Date.now
     @State private var emoji: String = "🗓"
     @State private var delta: Int = 0
+    @State private var color = Color.red
     let calendar = Calendar(identifier: .gregorian)
     var body: some View {
         ScrollView {
@@ -48,12 +49,14 @@ struct NewItemView: View {
                     DatePicker("Enter your birthday", selection: $date)
                         .datePickerStyle(GraphicalDatePickerStyle())
                         .frame(maxHeight: 400)
-                    Text("\(delta)")
-                        .onAppear() {
-                            delta = calendar.numberOfDaysBetween(dateFrom, and: date)
-                        }
+//                    Text("\(delta)")
+//                        .onAppear() {
+//                            delta = calendar.numberOfDaysBetween(dateFrom, and: date)
+//                        }
                 }
-            
+                VStack {
+                    ColorPicker("Choisir une couleur", selection: $color)
+                }
                     .navigationTitle("Nouveau")
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
@@ -62,6 +65,7 @@ struct NewItemView: View {
                                 item.date = date
                                 item.emoji = emoji
                                 item.delta = calendar.numberOfDaysBetween(dateFrom, and: date)
+                                item.color = color
                                 items.items.append(item)
                                 presentationMode.wrappedValue.dismiss()
                             }
