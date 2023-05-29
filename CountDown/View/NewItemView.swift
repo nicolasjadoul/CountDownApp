@@ -32,7 +32,6 @@ struct NewItemView: View {
                     Divider()
                     HStack {
                         Spacer()
-//                        EmojiTextField(text: $emoji, placeholder: emoji)
                         TextField(emoji, text: $emoji)
                             .font(.system(size: 70))
                             .frame(width: 100, height: 100)
@@ -49,10 +48,6 @@ struct NewItemView: View {
                     DatePicker("Enter your birthday", selection: $date)
                         .datePickerStyle(GraphicalDatePickerStyle())
                         .frame(maxHeight: 400)
-//                    Text("\(delta)")
-//                        .onAppear() {
-//                            delta = calendar.numberOfDaysBetween(dateFrom, and: date)
-//                        }
                 }
                 VStack {
                     ColorPicker("Choisir une couleur", selection: $color)
@@ -79,7 +74,6 @@ struct NewItemView: View {
 }
 
 struct NewItemView_Previews: PreviewProvider {
-//    static var item: Item = Item()
     static var previews: some View {
         NewItemView()
             .environmentObject(itemList())

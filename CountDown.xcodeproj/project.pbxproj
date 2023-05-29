@@ -20,7 +20,6 @@
 		03245CFA2A2003B000A74C37 /* CalendarExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03245CF92A2003B000A74C37 /* CalendarExt.swift */; };
 		03245CFD2A212A7400A74C37 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 03245CFC2A212A7400A74C37 /* EmojiPicker */; };
 		03245D032A2167A200A74C37 /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03245D022A2167A200A74C37 /* EmojiPicker.swift */; };
-		03245D052A236F8C00A74C37 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03245D042A236F8C00A74C37 /* ItemListView.swift */; };
 		584BE8F7F97E563B9EB441A9 /* Pods_CountDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57A3421EAA157D7DA562A64 /* Pods_CountDown.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +37,6 @@
 		03245CF92A2003B000A74C37 /* CalendarExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExt.swift; sourceTree = "<group>"; };
 		03245D002A21352000A74C37 /* CountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03245D022A2167A200A74C37 /* EmojiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
-		03245D042A236F8C00A74C37 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		4E7AC4DFC86C7CBEDE97FFA2 /* Pods-CountDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountDown.release.xcconfig"; path = "Target Support Files/Pods-CountDown/Pods-CountDown.release.xcconfig"; sourceTree = "<group>"; };
 		64F17D704FCDE681D23727C9 /* Pods-CountDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountDown.debug.xcconfig"; path = "Target Support Files/Pods-CountDown/Pods-CountDown.debug.xcconfig"; sourceTree = "<group>"; };
 		C57A3421EAA157D7DA562A64 /* Pods_CountDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				03245CEC2A1F932300A74C37 /* ListView.swift */,
-				03245D042A236F8C00A74C37 /* ItemListView.swift */,
 				03245CF72A1FA00B00A74C37 /* NewItemView.swift */,
 				03245CED2A1F932300A74C37 /* AddItemView.swift */,
 				03245CEB2A1F932200A74C37 /* ItemView.swift */,
@@ -253,7 +250,6 @@
 				03245CFA2A2003B000A74C37 /* CalendarExt.swift in Sources */,
 				03245CEE2A1F932300A74C37 /* DetailView.swift in Sources */,
 				03245CF02A1F932300A74C37 /* ListView.swift in Sources */,
-				03245D052A236F8C00A74C37 /* ItemListView.swift in Sources */,
 				03245CDD2A1F92A800A74C37 /* CountDownApp.swift in Sources */,
 				03245CF62A1F988E00A74C37 /* ItemModel.swift in Sources */,
 				03245CEF2A1F932300A74C37 /* ItemView.swift in Sources */,
